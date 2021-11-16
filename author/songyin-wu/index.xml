@@ -5,20 +5,12 @@
     <link>https://poiw.github.io/author/songyin-wu/</link>
       <atom:link href="https://poiw.github.io/author/songyin-wu/index.xml" rel="self" type="application/rss+xml" />
     <description>Songyin Wu</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
     <image>
       <url>https://poiw.github.io/images/icon_hu6a473e16f8875d90b4e36a755d43ac74_148444_512x512_fill_lanczos_center_3.png</url>
       <title>Songyin Wu</title>
       <link>https://poiw.github.io/author/songyin-wu/</link>
     </image>
-    
-    <item>
-      <title>Decoupling Features and Coordinates for Few-shot RGB Relocalization</title>
-      <link>https://poiw.github.io/project/few-shot_reloc/</link>
-      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>https://poiw.github.io/project/few-shot_reloc/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>
