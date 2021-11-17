@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lingqi Yan | Songyin Wu</title>
+    <link>https://poiw.github.io/author/lingqi-yan/</link>
+      <atom:link href="https://poiw.github.io/author/lingqi-yan/index.xml" rel="self" type="application/rss+xml" />
+    <description>Lingqi Yan</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://poiw.github.io/images/icon_hu6a473e16f8875d90b4e36a755d43ac74_148444_512x512_fill_lanczos_center_3.png</url>
+      <title>Lingqi Yan</title>
+      <link>https://poiw.github.io/author/lingqi-yan/</link>
+    </image>
+    
+    <item>
+      <title>Microfacet Material Energy Compensation</title>
+      <link>https://poiw.github.io/project/microsurface_energy_compensation/</link>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://poiw.github.io/project/microsurface_energy_compensation/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
