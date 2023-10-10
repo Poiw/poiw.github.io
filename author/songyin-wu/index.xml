@@ -14,24 +14,3 @@
     
   </channel>
 </rss>
-nk>
-    </image>
-    
-    <item>
-      <title>ExtraSS: A Framework for Joint Spatial Super Sampling and Frame Extrapolation</title>
-      <link>https://poiw.github.io/publication/extrass/</link>
-      <pubDate>Fri, 15 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://poiw.github.io/publication/extrass/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Microfacet Material Energy Compensation</title>
-      <link>https://poiw.github.io/project/microsurface_energy_compensation/</link>
-      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
-      <guid>https://poiw.github.io/project/microsurface_energy_compensation/</guid>
-      <description></description>
-    </item>
-    
-  </channel>
-</rss>
