@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -416,3 +417,423 @@
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="ExtraSS: A Framework for Joint Spatial Super Sampling and Frame Extrapolation.">
+  <meta name="keywords" content="Extrapolation, Super resolution, Low latency, Warping">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ExtraSS: A Framework for Joint Spatial Super Sampling and Frame Extrapolation</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <!-- <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet"> -->
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/lego.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">ExtraSS: A Framework for Joint Spatial Super Sampling and
+            Frame Extrapolation
+            </h1>
+
+      <h1 class="is-size-5 publication-authors">SIGGRAPH ASIA 2023 (Conference Track)</h1>
+
+          <div class="is-size-4 publication-authors">
+            <span class="author-block">
+              <a href="https://poiw.github.io/">Songyin Wu</a><sup>1</sup>,</span>
+            <span class="author-block">
+              Sungye Kim<sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://zheng95z.github.io/">Zheng Zeng</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              Deepak Vembar<sup>2</sup>,
+            </span>
+            <span class="author-block">
+              Sangeeta Jha<sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://kaplanyan.com/">Anton Kaplanyan</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://sites.cs.ucsb.edu/~lingqi/">Ling-Qi Yan</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of California, Santa Barbara &nbsp; &nbsp; &nbsp;</span>
+            <span class="author-block"><sup>2</sup>Intel</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://sites.cs.ucsb.edu/~lingqi/publications/paper_siga23extrass.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://sites.cs.ucsb.edu/~lingqi/publications/video_siga23extrass.mp4"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://sites.cs.ucsb.edu/~lingqi/publications/supplementary_siga23extrass.zip"
+                    class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Supplementary Document</span>
+                </a>
+              </span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/teaser.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">ExtraSS</span> increases both spatial resolution and frame rate without introducing additional latency.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop hero is-light">
+    <p> &nbsp; </p>
+    <!-- Abstract. -->
+    <div class="columns is-centered ">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract & Overview</h2>
+        <div class="content has-text-justified">
+          <p>
+          We introduce <span class="dnerf">ExtraSS</span>, a novel framework that combines spatial
+          super sampling and frame extrapolation to enhance real-time rendering performance. 
+          </p>
+          <p>
+          By integrating these techniques, our approach
+          achieves a balance between performance and quality, generating
+          temporally stable and high-quality, high-resolution results. Leveraging lightweight modules on warping and the Extra-SS network for
+          refinement, we exploit spatial-temporal information, improve rendering sharpness, handle moving shadings accurately, and generate
+          temporally stable results. Computational costs are significantly reduced compared to traditional rendering methods, enabling higher
+          frame rates and alias-free high resolution results. 
+          </p>
+          <p>
+          Evaluation using
+          Unreal Engine demonstrates the benefits of our framework over
+          conventional individual spatial or temporal super sampling methods, delivering improved rendering speed and visual quality. With
+          its ability to generate temporally stable high-quality results, our
+          framework creates new possibilities for real-time rendering applications, advancing the boundaries of performance and photo-realistic
+          rendering in various domains.
+        </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered ">
+      <div class="column is-four-fifths">
+        <video id="overview" autoplay muted loop playsinline height="100%">
+          <source src="./static/videos/method_overview.mp4"
+                  type="video/mp4">
+        </video>
+    <div class="content has-text-justified">
+      <p>
+    Our framework consists of three modules: <b>G-buffer Guided Warping</b>, <b>Shading Refinement</b>, and <b>Joint Extra-SS Network</b>, for jointly spatial super samping and frame extrapolation.
+    </p>
+    </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+
+    
+    <p> &nbsp; </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+  <div class="column is-full-width">
+    <h2 class="title is-3">G-buffer Guided Warping</h2>
+
+    <div class="content has-text-justified">
+    <p>
+      Our G-buffer guided warping module is designed to handle the ghosting artifacts and improve the sharpness.
+    </p>
+    <p>
+      <b>Traiditional warping</b> directly warps the pixels of the corresponding areas, which may cause ghosting artifacts in the disocclusion areas.
+    </p>
+    <p>
+      <b>Occlusion motion vectors [Zeng et al. 2021]</b> consider the motion of the occluders and use counter directions to refine motion vectors to fix some ghosting artifacts in the disocclusion areas. But it still fails when background becomes complex.
+    </p>
+    <p>
+      Our <b>G-buffer guided warping module</b> uses the G-buffer information to guide the warping process. It can handle the ghosting artifacts in the disocclusion areas and improve the sharpness.
+    </p>
+    </div>
+
+    <div class="columns is-centered ">
+      <div class="column is-four-fifths">
+        <video id="warp" autoplay muted loop playsinline height="100%">
+          <source src="./static/videos/ggw.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+  <div class="column is-full-width">
+    <h2 class="title is-3">Shading Refinement</h2>
+
+    <div class="content has-text-justified">
+    <p>
+      Shading refinement modules focuses on shading effects that are not handled by motion vectors including shadows and reflection. Our designed flow-refinement network will predict a residual and a flow to refine incorrect shadings.
+    </p>
+
+    </div>
+
+    <div class="columns is-centered ">
+      <div class="column is-four-fifths">
+        <video id="warp" autoplay muted loop playsinline height="100%">
+          <source src="./static/videos/shading_refinement.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <div class="content has-text-justified">
+      <p>
+        After refinement, the lagging shadows will be fixed and consistent with the character's motion.
+      </p>
+  
+      </div>
+
+      <div class="columns is-centered ">
+        <div class="column is-four-fifths">
+          <video id="warp" autoplay muted loop playsinline height="100%">
+            <source src="./static/videos/shading_refinement_res.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+  <div class="column is-full-width">
+    <h2 class="title is-3">Joint Extra-SS Network</h2>
+
+    <div class="content has-text-justified">
+    <p>
+      The last component of our framework is the joint Extra-SS network. It takes either generated images from our modules or rendered images from rendering engine as input and outputs the final rendered images with higher resolution and futher refined shadings.
+    </p>
+
+    </div>
+
+    <div class="columns is-centered ">
+      <div class="column is-four-fifths">
+        <video id="warp" autoplay muted loop playsinline height="100%">
+          <source src="./static/videos/extrassnet.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <br/>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop hero is-light">
+    <p> &nbsp; </p>
+    <div class="columns is-centered ">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Our Results</h2>
+        
+        <div class="content has-text-justified">
+          <p>
+          We show our full-frame results from 15 fps and 540p/720p/1080p to 30fps and 1080p/1440p/2160p.
+          </p>
+        </div>
+
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-steve">
+            <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/Bunker_Ours.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-chair-tp">
+            <video poster="" id="forest" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/Forest_Ours.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-shiba">
+            <video poster="" id="Infiltrator" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/Infiltrator_Ours.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-fullbody">
+            <video poster="" id="Sequencer" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/Sequencer_Ours.mp4"
+                      type="video/mp4">
+            </video>
+          
+          </div>
+        </div>
+        <br/>
+
+        
+        <div class="content has-text-justified">
+          <p>
+          For more comparison with baselines, please refer to our <a href="https://sites.cs.ucsb.edu/~lingqi/publications/video_siga23extrass.mp4"> <i>Supplementary Video</i></a> .
+          </p>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <p> &nbsp; </p>
+    <div class="columns is-centered ">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Performance</h2>
+        
+        <div class="content has-text-justified">
+          <p>
+          We show the running time of generating two consecutive frames of different methods on <i>BUNKER</i> scene in generating 1080p frames.
+          </p>
+        </div>
+
+        <img src="./static/images/Performance.png" alt="performance" width="100%">
+        <br/>
+
+        
+        <div class="content has-text-justified">
+          <p>
+          Our method not only spends less time in rendering engine side, but also faster than other methods in terms of methods themselves. As a result, our method is more efficient than other methods in total. Please refer to our main paper and supplementary document for more details about our performance. 
+          </p>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{wu2023extrass,
+      author = {Wu, Songyin and Kim, Sungye and Zeng, Zheng and Vembar, Deepak and Jha, Sangeeta and Kaplanyan, Anton and Yan, Ling-Qi},
+      title = {ExtraSS: A Framework for Joint Spatial Super Sampling and Frame Extrapolation},
+      year = {2023},
+      url = {https://doi.org/10.1145/3610548.3618224},
+      booktitle = {SIGGRAPH Asia 2023 Conference Papers},
+      articleno = {92},
+      numpages = {11},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/paper_siga23extrass.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/poiw" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            The project page is built upon <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+>>>>>>> 57bfae1ed7fbc5fb924a71bdbe9dad81ca2ab412
