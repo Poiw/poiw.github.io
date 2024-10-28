@@ -5,12 +5,20 @@
     <link>https://poiw.github.io/</link>
       <atom:link href="https://poiw.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Songyin Wu</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 15 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 15 Dec 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://poiw.github.io/images/icon_hu6a473e16f8875d90b4e36a755d43ac74_148444_512x512_fill_lanczos_center_2.png</url>
       <title>Songyin Wu</title>
       <link>https://poiw.github.io/</link>
     </image>
+    
+    <item>
+      <title>GFFE: G-buffer Free Frame Extrapolation for Low-latency Real-time Rendering</title>
+      <link>https://poiw.github.io/publication/gffe/</link>
+      <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://poiw.github.io/publication/gffe/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>ExtraSS: A Framework for Joint Spatial Super Sampling and Frame Extrapolation</title>
