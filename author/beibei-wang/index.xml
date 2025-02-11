@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beibei Wang | Songyin Wu</title>
+    <link>https://poiw.github.io/author/beibei-wang/</link>
+      <atom:link href="https://poiw.github.io/author/beibei-wang/index.xml" rel="self" type="application/rss+xml" />
+    <description>Beibei Wang</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 16 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://poiw.github.io/images/icon_hu6a473e16f8875d90b4e36a755d43ac74_148444_512x512_fill_lanczos_center_2.png</url>
+      <title>Beibei Wang</title>
+      <link>https://poiw.github.io/author/beibei-wang/</link>
+    </image>
+    
+    <item>
+      <title>BSDF Importance Baking: A Lightweight Neural Solution to Importance Sampling General Parametric BSDFs</title>
+      <link>https://poiw.github.io/publication/otsample/</link>
+      <pubDate>Thu, 16 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://poiw.github.io/publication/otsample/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

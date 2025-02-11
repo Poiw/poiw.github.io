@@ -908,164 +908,6 @@
   
   
   
-  <a href="/publication/otsample/">
-      <img src="/publication/otsample/featured_hu6d965a0cbaff03d29d546f1b0e9bf173_1237531_918x517_fill_q90_lanczos_center_2.png" class="article-banner" alt="">
-  </a>
-  
-
-  <h3 class="article-title mb-1 mt-3">
-    <a href="/publication/otsample/">Unified Gaussian Primitives for Scene Representation and Rendering</a>
-  </h3>
-
-  
-  <div class="article-style">
-    <p>Searching for a unified scene representation remains a research challenge in computer graphics. Traditional mesh-based representations are unsuitable for dense, fuzzy elements, and introduce additional complexity for filtering and differentiable rendering. Conversely, voxel-based representations struggle to model hard surfaces and suffer from intensive memory requirement. We propose a general-purpose rendering primitive based on 3D Gaussian distribution for unified scene representation, featuring versatile appearance ranging from glossy surfaces to fuzzy elements, as well as physically based scattering to enable accurate global illumination. We formulate the rendering theory for the primitive based on non-exponential transport and derive efficient rendering operations to be compatible with Monte Carlo path tracing. The new representation can be converted from different sources, including meshes and 3D Gaussian splatting, and further refined via transmittance optimization thanks to its differentiability. We demonstrate the versatility of our representation in various rendering applications such as global illumination and appearance editing, while supporting arbitrary lighting conditions by nature. Additionally, we compare our representation to existing volumetric representations, highlighting its efficiency to reproduce details.</p>
-  </div>
-  
-
-  
-  <div class="btn-links">
-    
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://mangosister.github.io/gsr_site/" target="_blank" rel="noopener">
-    
-    Website
-  </a>
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2406.09733" target="_blank" rel="noopener">
-    
-    Paper
-  </a>
-
-
-  </div>
-  
-
-</div>
-
-      
-    
-      
-        
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-<div class="card-simple">
-
-  
-    
-
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-  
-  <span>Yang Zhou</span>, <span>Songyin Wu</span>, <span>Ling-Qi Yan</span>
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    September 2024
-  </span>
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="pub-publication">
-    
-      Preprint
-    
-  </span>
-  
-
-  
-
-  
-  
-  
-
-  
-  
-
-</div>
-
-  
-
-  
-  
-  
-  
   <a href="/publication/unifiedgaussian/">
       <img src="/publication/unifiedgaussian/featured_hu2962f26933961fa61b38c3ffaae88c0d_5147166_918x517_fill_q90_lanczos_center_2.png" class="article-banner" alt="">
   </a>
@@ -1331,6 +1173,148 @@
   <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://sites.cs.ucsb.edu/~lingqi/publications/video_siga23extrass.mp4" target="_blank" rel="noopener">
     
     Video
+  </a>
+
+
+  </div>
+  
+
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+<div class="card-simple">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  <span>Yaoyi Bai</span>, <span>Songyin Wu</span>, <span>Zheng Zeng</span>, <span>Beibei Wang</span>, <span>Ling-Qi Yan</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    February 2023
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      Preprint
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/publication/otsample/">
+      <img src="/publication/otsample/featured_hu6d965a0cbaff03d29d546f1b0e9bf173_1237531_918x517_fill_q90_lanczos_center_2.png" class="article-banner" alt="">
+  </a>
+  
+
+  <h3 class="article-title mb-1 mt-3">
+    <a href="/publication/otsample/">BSDF Importance Baking: A Lightweight Neural Solution to Importance Sampling General Parametric BSDFs</a>
+  </h3>
+
+  
+  <div class="article-style">
+    <p>Parametric Bidirectional Scattering Distribution Functions (BSDFs) are pervasively used because of their flexibility to represent a large variety of material appearances by simply tuning the parameters. While efficient evaluation of parametric BSDFs has been well-studied, high-quality importance sampling techniques for parametric BSDFs are still scarce. Existing sampling strategies either heavily rely on approximations, resulting in high variance, or solely perform sampling on a portion of the whole BSDF slice. Moreover, many of the sampling approaches are specifically paired with certain types of BSDFs. In this paper, we seek an efficient and general way for importance sampling parametric BSDFs. We notice that the nature of importance sampling is the mapping between a uniform distribution and the target distribution. Specifically, when BSDF parameters are given, the mapping that performs importance sampling on a BSDF slice can be simply recorded as a 2D image that we name as importance map. Following this observation, we accurately precompute the importance maps using a mathematical tool named optimal transport. Then we propose a lightweight neural network to efficiently compress the precomputed importance maps. In this way, we have brought parametric BSDF important sampling to the precomputation stage, avoiding heavy runtime computation. Since this process is similar to light baking where a set of images are precomputed, we name our method importance baking. Together with a BSDF evaluation network and a PDF (probability density function) query network, our method enables full multiple importance sampling (MIS) without any revision to the rendering pipeline. Our method essentially performs perfect importance sampling. Compared with previous methods, we demonstrate reduced noise levels on rendering results with a rich set of appearances, from multiple-bounce microfacet conductors with anisotropic roughness, to layered materials and Disney principled materials.</p>
+  </div>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2210.13681" target="_blank" rel="noopener">
+    
+    Paper
   </a>
 
 

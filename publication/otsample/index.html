@@ -27,7 +27,7 @@
   
     
   
-  <meta name="description" content=" Searching for a unified scene representation remains a research challenge in computer graphics. Traditional mesh-based representations are unsuitable for dense, fuzzy elements, and introduce additional complexity for filtering and differentiable rendering. Conversely, voxel-based representations struggle to model hard surfaces and suffer from intensive memory requirement. We propose a general-purpose rendering primitive based on 3D Gaussian distribution for unified scene representation, featuring versatile appearance ranging from glossy surfaces to fuzzy elements, as well as physically based scattering to enable accurate global illumination. We formulate the rendering theory for the primitive based on non-exponential transport and derive efficient rendering operations to be compatible with Monte Carlo path tracing. The new representation can be converted from different sources, including meshes and 3D Gaussian splatting, and further refined via transmittance optimization thanks to its differentiability. We demonstrate the versatility of our representation in various rendering applications such as global illumination and appearance editing, while supporting arbitrary lighting conditions by nature. Additionally, we compare our representation to existing volumetric representations, highlighting its efficiency to reproduce details.">
+  <meta name="description" content=" Parametric Bidirectional Scattering Distribution Functions (BSDFs) are pervasively used because of their flexibility to represent a large variety of material appearances by simply tuning the parameters. While efficient evaluation of parametric BSDFs has been well-studied, high-quality importance sampling techniques for parametric BSDFs are still scarce. Existing sampling strategies either heavily rely on approximations, resulting in high variance, or solely perform sampling on a portion of the whole BSDF slice. Moreover, many of the sampling approaches are specifically paired with certain types of BSDFs. In this paper, we seek an efficient and general way for importance sampling parametric BSDFs. We notice that the nature of importance sampling is the mapping between a uniform distribution and the target distribution. Specifically, when BSDF parameters are given, the mapping that performs importance sampling on a BSDF slice can be simply recorded as a 2D image that we name as importance map. Following this observation, we accurately precompute the importance maps using a mathematical tool named optimal transport. Then we propose a lightweight neural network to efficiently compress the precomputed importance maps. In this way, we have brought parametric BSDF important sampling to the precomputation stage, avoiding heavy runtime computation. Since this process is similar to light baking where a set of images are precomputed, we name our method importance baking. Together with a BSDF evaluation network and a PDF (probability density function) query network, our method enables full multiple importance sampling (MIS) without any revision to the rendering pipeline. Our method essentially performs perfect importance sampling. Compared with previous methods, we demonstrate reduced noise levels on rendering results with a rich set of appearances, from multiple-bounce microfacet conductors with anisotropic roughness, to layered materials and Disney principled materials. ">
 
   
   <link rel="alternate" hreflang="en-us" href="https://poiw.github.io/publication/otsample/">
@@ -236,14 +236,14 @@
   
   <meta property="og:site_name" content="Songyin Wu">
   <meta property="og:url" content="https://poiw.github.io/publication/otsample/">
-  <meta property="og:title" content="Unified Gaussian Primitives for Scene Representation and Rendering | Songyin Wu">
-  <meta property="og:description" content=" Searching for a unified scene representation remains a research challenge in computer graphics. Traditional mesh-based representations are unsuitable for dense, fuzzy elements, and introduce additional complexity for filtering and differentiable rendering. Conversely, voxel-based representations struggle to model hard surfaces and suffer from intensive memory requirement. We propose a general-purpose rendering primitive based on 3D Gaussian distribution for unified scene representation, featuring versatile appearance ranging from glossy surfaces to fuzzy elements, as well as physically based scattering to enable accurate global illumination. We formulate the rendering theory for the primitive based on non-exponential transport and derive efficient rendering operations to be compatible with Monte Carlo path tracing. The new representation can be converted from different sources, including meshes and 3D Gaussian splatting, and further refined via transmittance optimization thanks to its differentiability. We demonstrate the versatility of our representation in various rendering applications such as global illumination and appearance editing, while supporting arbitrary lighting conditions by nature. Additionally, we compare our representation to existing volumetric representations, highlighting its efficiency to reproduce details."><meta property="og:image" content="https://poiw.github.io/publication/otsample/featured.png">
+  <meta property="og:title" content="BSDF Importance Baking: A Lightweight Neural Solution to Importance Sampling General Parametric BSDFs | Songyin Wu">
+  <meta property="og:description" content=" Parametric Bidirectional Scattering Distribution Functions (BSDFs) are pervasively used because of their flexibility to represent a large variety of material appearances by simply tuning the parameters. While efficient evaluation of parametric BSDFs has been well-studied, high-quality importance sampling techniques for parametric BSDFs are still scarce. Existing sampling strategies either heavily rely on approximations, resulting in high variance, or solely perform sampling on a portion of the whole BSDF slice. Moreover, many of the sampling approaches are specifically paired with certain types of BSDFs. In this paper, we seek an efficient and general way for importance sampling parametric BSDFs. We notice that the nature of importance sampling is the mapping between a uniform distribution and the target distribution. Specifically, when BSDF parameters are given, the mapping that performs importance sampling on a BSDF slice can be simply recorded as a 2D image that we name as importance map. Following this observation, we accurately precompute the importance maps using a mathematical tool named optimal transport. Then we propose a lightweight neural network to efficiently compress the precomputed importance maps. In this way, we have brought parametric BSDF important sampling to the precomputation stage, avoiding heavy runtime computation. Since this process is similar to light baking where a set of images are precomputed, we name our method importance baking. Together with a BSDF evaluation network and a PDF (probability density function) query network, our method enables full multiple importance sampling (MIS) without any revision to the rendering pipeline. Our method essentially performs perfect importance sampling. Compared with previous methods, we demonstrate reduced noise levels on rendering results with a rich set of appearances, from multiple-bounce microfacet conductors with anisotropic roughness, to layered materials and Disney principled materials. "><meta property="og:image" content="https://poiw.github.io/publication/otsample/featured.png">
   <meta property="twitter:image" content="https://poiw.github.io/publication/otsample/featured.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="1969-12-31T16:33:44-08:00">
+      <meta property="article:published_time" content="1969-12-31T16:33:43-08:00">
     
-    <meta property="article:modified_time" content="2024-09-22T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2023-02-16T00:00:00&#43;00:00">
   
 
   
@@ -267,18 +267,18 @@
     "@type": "WebPage",
     "@id": "https://poiw.github.io/publication/otsample/"
   },
-  "headline": "Unified Gaussian Primitives for Scene Representation and Rendering",
+  "headline": "BSDF Importance Baking: A Lightweight Neural Solution to Importance Sampling General Parametric BSDFs",
   
   "image": [
     "https://poiw.github.io/publication/otsample/featured.png"
   ],
   
-  "datePublished": "1969-12-31T16:33:44-08:00",
-  "dateModified": "2024-09-22T00:00:00Z",
+  "datePublished": "1969-12-31T16:33:43-08:00",
+  "dateModified": "2023-02-16T00:00:00Z",
   
   "author": {
     "@type": "Person",
-    "name": "Yang Zhou"
+    "name": "Yaoyi Bai"
   },
   
   "publisher": {
@@ -289,7 +289,7 @@
       "url": "https://poiw.github.io/images/icon_hu6a473e16f8875d90b4e36a755d43ac74_148444_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": " Searching for a unified scene representation remains a research challenge in computer graphics. Traditional mesh-based representations are unsuitable for dense, fuzzy elements, and introduce additional complexity for filtering and differentiable rendering. Conversely, voxel-based representations struggle to model hard surfaces and suffer from intensive memory requirement. We propose a general-purpose rendering primitive based on 3D Gaussian distribution for unified scene representation, featuring versatile appearance ranging from glossy surfaces to fuzzy elements, as well as physically based scattering to enable accurate global illumination. We formulate the rendering theory for the primitive based on non-exponential transport and derive efficient rendering operations to be compatible with Monte Carlo path tracing. The new representation can be converted from different sources, including meshes and 3D Gaussian splatting, and further refined via transmittance optimization thanks to its differentiability. We demonstrate the versatility of our representation in various rendering applications such as global illumination and appearance editing, while supporting arbitrary lighting conditions by nature. Additionally, we compare our representation to existing volumetric representations, highlighting its efficiency to reproduce details."
+  "description": " Parametric Bidirectional Scattering Distribution Functions (BSDFs) are pervasively used because of their flexibility to represent a large variety of material appearances by simply tuning the parameters. While efficient evaluation of parametric BSDFs has been well-studied, high-quality importance sampling techniques for parametric BSDFs are still scarce. Existing sampling strategies either heavily rely on approximations, resulting in high variance, or solely perform sampling on a portion of the whole BSDF slice. Moreover, many of the sampling approaches are specifically paired with certain types of BSDFs. In this paper, we seek an efficient and general way for importance sampling parametric BSDFs. We notice that the nature of importance sampling is the mapping between a uniform distribution and the target distribution. Specifically, when BSDF parameters are given, the mapping that performs importance sampling on a BSDF slice can be simply recorded as a 2D image that we name as importance map. Following this observation, we accurately precompute the importance maps using a mathematical tool named optimal transport. Then we propose a lightweight neural network to efficiently compress the precomputed importance maps. In this way, we have brought parametric BSDF important sampling to the precomputation stage, avoiding heavy runtime computation. Since this process is similar to light baking where a set of images are precomputed, we name our method importance baking. Together with a BSDF evaluation network and a PDF (probability density function) query network, our method enables full multiple importance sampling (MIS) without any revision to the rendering pipeline. Our method essentially performs perfect importance sampling. Compared with previous methods, we demonstrate reduced noise levels on rendering results with a rich set of appearances, from multiple-bounce microfacet conductors with anisotropic roughness, to layered materials and Disney principled materials. "
 }
 </script>
 
@@ -307,7 +307,7 @@
 
 
 
-  <title>Unified Gaussian Primitives for Scene Representation and Rendering | Songyin Wu</title>
+  <title>BSDF Importance Baking: A Lightweight Neural Solution to Importance Sampling General Parametric BSDFs | Songyin Wu</title>
 
 </head>
 
@@ -448,7 +448,7 @@
 
 
 <div class="article-container pt-3">
-  <h1>Unified Gaussian Primitives for Scene Representation and Rendering</h1>
+  <h1>BSDF Importance Baking: A Lightweight Neural Solution to Importance Sampling General Parametric BSDFs</h1>
 
   
 
@@ -465,7 +465,7 @@
     
 
   
-  <span>Yang Zhou</span>, <span>Songyin Wu</span>, <span>Ling-Qi Yan</span>
+  <span>Yaoyi Bai</span>, <span>Songyin Wu</span>, <span>Zheng Zeng</span>, <span>Beibei Wang</span>, <span>Ling-Qi Yan</span>
   </div>
   
   
@@ -476,7 +476,7 @@
     
       
     
-    September 2024
+    February 2023
   </span>
   
 
@@ -548,23 +548,7 @@
   
     
   
-  <a class="btn btn-outline-primary my-1 mr-1" href="https://mangosister.github.io/gsr_site/" target="_blank" rel="noopener">
-    
-    Website
-  </a>
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/abs/2406.09733" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/abs/2210.13681" target="_blank" rel="noopener">
     
     Paper
   </a>
@@ -589,7 +573,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">Searching for a unified scene representation remains a research challenge in computer graphics. Traditional mesh-based representations are unsuitable for dense, fuzzy elements, and introduce additional complexity for filtering and differentiable rendering. Conversely, voxel-based representations struggle to model hard surfaces and suffer from intensive memory requirement. We propose a general-purpose rendering primitive based on 3D Gaussian distribution for unified scene representation, featuring versatile appearance ranging from glossy surfaces to fuzzy elements, as well as physically based scattering to enable accurate global illumination. We formulate the rendering theory for the primitive based on non-exponential transport and derive efficient rendering operations to be compatible with Monte Carlo path tracing. The new representation can be converted from different sources, including meshes and 3D Gaussian splatting, and further refined via transmittance optimization thanks to its differentiability. We demonstrate the versatility of our representation in various rendering applications such as global illumination and appearance editing, while supporting arbitrary lighting conditions by nature. Additionally, we compare our representation to existing volumetric representations, highlighting its efficiency to reproduce details.</p>
+    <p class="pub-abstract">Parametric Bidirectional Scattering Distribution Functions (BSDFs) are pervasively used because of their flexibility to represent a large variety of material appearances by simply tuning the parameters. While efficient evaluation of parametric BSDFs has been well-studied, high-quality importance sampling techniques for parametric BSDFs are still scarce. Existing sampling strategies either heavily rely on approximations, resulting in high variance, or solely perform sampling on a portion of the whole BSDF slice. Moreover, many of the sampling approaches are specifically paired with certain types of BSDFs. In this paper, we seek an efficient and general way for importance sampling parametric BSDFs. We notice that the nature of importance sampling is the mapping between a uniform distribution and the target distribution. Specifically, when BSDF parameters are given, the mapping that performs importance sampling on a BSDF slice can be simply recorded as a 2D image that we name as importance map. Following this observation, we accurately precompute the importance maps using a mathematical tool named optimal transport. Then we propose a lightweight neural network to efficiently compress the precomputed importance maps. In this way, we have brought parametric BSDF important sampling to the precomputation stage, avoiding heavy runtime computation. Since this process is similar to light baking where a set of images are precomputed, we name our method importance baking. Together with a BSDF evaluation network and a PDF (probability density function) query network, our method enables full multiple importance sampling (MIS) without any revision to the rendering pipeline. Our method essentially performs perfect importance sampling. Compared with previous methods, we demonstrate reduced noise levels on rendering results with a rich set of appearances, from multiple-bounce microfacet conductors with anisotropic roughness, to layered materials and Disney principled materials.</p>
     
 
     
@@ -650,7 +634,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://poiw.github.io/publication/otsample/&amp;text=Unified%20Gaussian%20Primitives%20for%20Scene%20Representation%20and%20Rendering" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://poiw.github.io/publication/otsample/&amp;text=BSDF%20Importance%20Baking:%20A%20Lightweight%20Neural%20Solution%20to%20Importance%20Sampling%20General%20Parametric%20BSDFs" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -663,7 +647,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://poiw.github.io/publication/otsample/&amp;t=Unified%20Gaussian%20Primitives%20for%20Scene%20Representation%20and%20Rendering" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://poiw.github.io/publication/otsample/&amp;t=BSDF%20Importance%20Baking:%20A%20Lightweight%20Neural%20Solution%20to%20Importance%20Sampling%20General%20Parametric%20BSDFs" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -676,7 +660,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Unified%20Gaussian%20Primitives%20for%20Scene%20Representation%20and%20Rendering&amp;body=https://poiw.github.io/publication/otsample/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=BSDF%20Importance%20Baking:%20A%20Lightweight%20Neural%20Solution%20to%20Importance%20Sampling%20General%20Parametric%20BSDFs&amp;body=https://poiw.github.io/publication/otsample/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -689,7 +673,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://poiw.github.io/publication/otsample/&amp;title=Unified%20Gaussian%20Primitives%20for%20Scene%20Representation%20and%20Rendering" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://poiw.github.io/publication/otsample/&amp;title=BSDF%20Importance%20Baking:%20A%20Lightweight%20Neural%20Solution%20to%20Importance%20Sampling%20General%20Parametric%20BSDFs" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -702,7 +686,7 @@
       
       
       <li>
-        <a href="https://web.whatsapp.com/send?text=Unified%20Gaussian%20Primitives%20for%20Scene%20Representation%20and%20Rendering%20https://poiw.github.io/publication/otsample/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="https://web.whatsapp.com/send?text=BSDF%20Importance%20Baking:%20A%20Lightweight%20Neural%20Solution%20to%20Importance%20Sampling%20General%20Parametric%20BSDFs%20https://poiw.github.io/publication/otsample/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -715,7 +699,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://poiw.github.io/publication/otsample/&amp;title=Unified%20Gaussian%20Primitives%20for%20Scene%20Representation%20and%20Rendering" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://poiw.github.io/publication/otsample/&amp;title=BSDF%20Importance%20Baking:%20A%20Lightweight%20Neural%20Solution%20to%20Importance%20Sampling%20General%20Parametric%20BSDFs" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -732,6 +716,28 @@
 
 
 
+
+
+  
+    
+    
+
+
+
+
+
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
 
 
   
