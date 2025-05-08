@@ -90,7 +90,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="index.html"
+                <a href="./papers/main.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -99,17 +99,17 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="index.html"
+                <a href="./papers/main_supp.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>Supplementary </span>
+                  <span>Supplementary</span>
                 </a>
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="index.html"
+                <a href="./papers/supp_video.mp4"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -149,6 +149,49 @@
   </div>
 </section>
 
+
+<section class="section">
+  <div class="container is-max-desktop hero is-light">
+    <p> &nbsp; </p>
+    <!-- Abstract. -->
+    <div class="columns is-centered ">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract & Overview</h2>
+        <div class="content has-text-justified">
+          <p>
+          We propose an online 3D Gaussian-based dense mapping framework for photorealistic details reconstruction from a monocular image stream. 
+          Our approach addresses two key challenges in monocular online reconstruction: distributing Gaussians without relying on depth maps and ensuring both local and global consistency in the reconstructed maps. 
+          </p>  
+          <p>
+          To achieve this, we introduce two key modules: the <b>Hierarchical Gaussian Management Module</b> for effective Gaussian distribution and the <b>Global Consistency Optimization Module</b> for maintaining alignment and coherence at all scales. 
+          In addition, we present the <b>Multi-level Occupancy Hash Voxels </b> (MOHV), a structure that regularizes Gaussians for capturing details across multiple levels of granularity. 
+          MOHV ensures accurate reconstruction of both fine and coarse geometries and textures, preserving intricate details while maintaining overall structural integrity. 
+          </p>  
+          <p>
+          Compared to state-of-the-art RGB-only and even RGB-D methods, our framework achieves superior reconstruction quality with high computational efficiency. Moreover, it integrates seamlessly with various tracking systems, ensuring generality and scalability.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered ">
+      <div class="column is-four-fifths">
+        <video id="overview" autoplay muted loop playsinline height="100%">
+          <source src="./static/videos/method_overview.mp4"
+                  type="video/mp4">
+        </video>
+    <div class="content has-text-justified">
+    </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+
+    
+    <p> &nbsp; </p>
+  </div>
+</section>
 
 <footer class="footer">
   <div class="container">
