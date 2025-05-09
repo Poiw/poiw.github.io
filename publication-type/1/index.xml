@@ -5,12 +5,20 @@
     <link>https://poiw.github.io/publication-type/1/</link>
       <atom:link href="https://poiw.github.io/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 15 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 10 Aug 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://poiw.github.io/images/icon_hu6a473e16f8875d90b4e36a755d43ac74_148444_512x512_fill_lanczos_center_2.png</url>
       <title>1</title>
       <link>https://poiw.github.io/publication-type/1/</link>
     </image>
+    
+    <item>
+      <title>Monocular Online Reconstruction with Enhanced Detail Preservation</title>
+      <link>https://poiw.github.io/publication/modp/</link>
+      <pubDate>Sun, 10 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://poiw.github.io/publication/modp/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>ExtraSS: A Framework for Joint Spatial Super Sampling and Frame Extrapolation</title>
