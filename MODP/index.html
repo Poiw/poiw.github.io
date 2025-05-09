@@ -109,7 +109,7 @@
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="./papers/supp_video.mp4"
+                <a href="https://drive.google.com/file/d/1Y5U7VrXydYTWNdMqinqzgG6aOWXnR4FL/view?usp=sharing"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -182,8 +182,6 @@
           <source src="./static/videos/method_overview.mp4"
                   type="video/mp4">
         </video>
-    <div class="content has-text-justified">
-    </div>
       </div>
     </div>
     <!--/ Paper video. -->
@@ -192,6 +190,223 @@
     <p> &nbsp; </p>
   </div>
 </section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+  <div class="column is-full-width">
+    <h2 class="title is-3">Multi-level Occupancy Hash Voxels</h2>
+
+    <div class="content has-text-justified">
+    <p>
+      The Multi-level Occupancy Hash Voxels (MOHV) structure regularizes Gaussians to capture details across multiple levels of granularity. Given the target scale of the current camera view — which reflects the scale of the captured image in world space — MOHV determines whether a given position in world space is occupied by a Gaussian.
+    </p>
+    <p>
+      Leveraging our hierarchical structure, Gaussians are distributed in a coarse-to-fine manner—densely in detailed, close-view regions and sparsely in distant regions with simple textures or geometry. This approach avoids redundancy and ensures that the number of Gaussians is proportional to the scene's information content, enabling effective reconstruction details across different levels.
+    </p>
+    </div>
+<div class="columns is-centered">
+  <div class="column is-half has-text-centered">
+    <video id="warp1" autoplay muted loop playsinline style="max-width: 100%; height: auto;">
+      <source src="./static/videos/MOHV_q.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="column is-half has-text-centered">
+    <video id="warp2" autoplay muted loop playsinline style="max-width: 100%; height: auto;">
+      <source src="./static/videos/MOHV_u.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+  </div>
+  </div>
+
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+  <div class="column is-full-width">
+    <h2 class="title is-3">Global Consistency Optimization</h2>
+
+    <div class="content has-text-justified">
+    <p>
+      After Gaussians are distributed in world space, their optimization is guided by the selected views. The global consistency optimization module balances the refinement of newly observed local regions with the maintenance of global consistency across the entire scene.
+    </p>
+    <p>
+      To achieve this, we sample two sets of optimization views in addition to the current view. Local views are selected based on covisibility to enforce multi-view consistency in newly observed regions, while global views are sampled based on distance and reconstruction error to focus on under-optimized or recently observed areas, avoiding redundant optimization of well-reconstructed historical regions.
+    </p>
+    </div>
+
+    <div class="columns is-centered ">
+      <div class="column is-four-fifths">
+        <video id="warp" autoplay muted loop playsinline height="100%">
+          <source src="./static/videos/global_opt.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+  <div class="column is-full-width">
+    <h2 class="title is-3">Reconstruction Process</h2>
+
+    <div class="columns is-centered ">
+      <div class="column is-four-fifths">
+        <video id="warp" autoplay muted loop playsinline height="100%">
+          <source src="./static/videos/recon_process.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+    </div>
+    
+    <div class="has-text-centered content ">
+      <p>
+      Incrementally reconstructing photorealistic scenes from a monocular RGB input stream. (Video is compressed for web display.)
+      </p>
+    </div>
+
+  </div>
+  </div>
+
+</section>
+
+
+
+
+<!-- <section class="section">
+  <div class="container is-max-desktop hero is-light">
+    <p> &nbsp; </p>
+    <div class="columns is-centered ">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+
+          <div class="carousel-item active">
+            <video autoplay controls muted loop playsinline height="100%">
+              <source src="./papers/supp_video.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+
+          <div class="carousel-item">
+            <video autoplay controls muted loop playsinline height="100%">
+              <source src="./papers/supp_video.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+
+          <div class="carousel-item">
+            <video autoplay controls muted loop playsinline height="100%">
+              <source src="./papers/supp_video.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+
+          <div class="carousel-item">
+            <video autoplay controls muted loop playsinline height="100%">
+              <source src="./papers/supp_video.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          
+        </div>
+
+        
+        <div class="content has-text-justified">
+          <p>
+          For more comparison and results, please refer to our <a href="./papers/supp_video.mp4"> <i>Supplementary Video</i></a> .
+          </p>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+</section> -->
+
+<section class="section">
+  <div class="container is-max-desktop hero is-light">
+    <p> &nbsp; </p>
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 has-text-centered">Results</h2>
+
+        <div class="buttons is-centered mb-4">
+          <button class="button is-info" onclick="goToVideo(0)">TUM Office</button>
+          <button class="button is-success" onclick="goToVideo(1)">Replica Office0</button>
+          <button class="button is-warning" onclick="goToVideo(2)">Aria BikeShop</button>
+          <button class="button is-danger" onclick="goToVideo(3)">Aria FocusRoom</button>
+          <button class="button is-primary" onclick="goToVideo(4)">Aria SteakHouse</button>
+        </div>
+
+        <div id="results-carousel" class="results-carousel">
+          <div class="carousel-item active">
+            <video autoplay controls muted loop playsinline style="height: 500px; width: auto;">
+              <source src="./static/videos/fr3_comparison.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="carousel-item">
+            <video autoplay controls muted loop playsinline style="height: 500px; width: auto;">
+              <source src="./static/videos/office0_comparison.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="carousel-item">
+            <video autoplay controls muted loop playsinline style="height: 500px; width: auto;">
+              <source src="./static/videos/bikeshop.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="carousel-item">
+            <video autoplay controls muted loop playsinline style="height: 500px; width: auto;">
+              <source src="./static/videos/focusroom.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="carousel-item">
+            <video autoplay controls muted loop playsinline style="height: 500px; width: auto;">
+              <source src="./static/videos/steakhouse.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <div class="content has-text-justified mt-4">
+          <p>
+            For more comparison and results, please refer to our <a href="https://drive.google.com/file/d/1Y5U7VrXydYTWNdMqinqzgG6aOWXnR4FL/view?usp=sharing"><i>Supplementary Video</i></a>. (Videos are compressed for web display.)
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .carousel-item {
+    display: none;
+    text-align: center;
+  }
+  .carousel-item.active {
+    display: block;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const items = document.querySelectorAll('.carousel-item');
+
+    window.goToVideo = (index) => {
+      items.forEach((item, i) => {
+        item.classList.toggle('active', i === index);
+      });
+    };
+
+    goToVideo(0); // Show first video initially
+  });
+</script>
+
 
 <footer class="footer">
   <div class="container">
@@ -202,7 +417,7 @@
     </div>
     <div class="columns is-centered">
       <div class="column is-8">
-        <div class="content">
+        <div class="content has-text-centered">
           <p>
             The project page is built upon <a
               href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
