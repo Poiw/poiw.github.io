@@ -5,12 +5,60 @@
     <link>https://poiw.github.io/author/songyin-wu/</link>
       <atom:link href="https://poiw.github.io/author/songyin-wu/index.xml" rel="self" type="application/rss+xml" />
     <description>Songyin Wu</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 10 Aug 2025 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://poiw.github.io/author/songyin-wu/avatar_hu4f494a07e43c3ee16cd684f59d8c928d_810834_540x540_fill_q90_lanczos_center.jpg</url>
+      <url>https://poiw.github.io/images/icon_hu6a473e16f8875d90b4e36a755d43ac74_148444_512x512_fill_lanczos_center_2.png</url>
       <title>Songyin Wu</title>
       <link>https://poiw.github.io/author/songyin-wu/</link>
     </image>
+    
+    <item>
+      <title>Monocular Online Reconstruction with Enhanced Detail Preservation</title>
+      <link>https://poiw.github.io/publication/modp/</link>
+      <pubDate>Sun, 10 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://poiw.github.io/publication/modp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GFFE: G-buffer Free Frame Extrapolation for Low-latency Real-time Rendering</title>
+      <link>https://poiw.github.io/publication/gffe/</link>
+      <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://poiw.github.io/publication/gffe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unified Gaussian Primitives for Scene Representation and Rendering</title>
+      <link>https://poiw.github.io/publication/unifiedgaussian/</link>
+      <pubDate>Sun, 22 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://poiw.github.io/publication/unifiedgaussian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ExtraSS: A Framework for Joint Spatial Super Sampling and Frame Extrapolation</title>
+      <link>https://poiw.github.io/publication/extrass/</link>
+      <pubDate>Fri, 15 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://poiw.github.io/publication/extrass/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BSDF Importance Baking: A Lightweight Neural Solution to Importance Sampling General Parametric BSDFs</title>
+      <link>https://poiw.github.io/publication/otsample/</link>
+      <pubDate>Thu, 16 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://poiw.github.io/publication/otsample/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microfacet Material Energy Compensation</title>
+      <link>https://poiw.github.io/project/microsurface_energy_compensation/</link>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://poiw.github.io/project/microsurface_energy_compensation/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
