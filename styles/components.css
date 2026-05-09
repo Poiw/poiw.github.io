@@ -234,14 +234,19 @@
   color: var(--accent-dark);
   font-weight: 650;
   text-decoration: none;
+  white-space: nowrap;
   transition: color 160ms ease;
 }
 
 .authors a {
-  color: #263f3d;
-  font-weight: 560;
+  color: #1f6fb2;
+  font-weight: 400;
   text-decoration: none;
   transition: color 160ms ease;
+}
+
+.authors .self-author {
+  font-weight: 700;
 }
 
 .bio-section a:hover,

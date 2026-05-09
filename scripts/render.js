@@ -108,6 +108,7 @@
 
   function renderAuthors(authors) {
     var node = el("p", "authors");
+    var profileName = window.siteData && window.siteData.profile && window.siteData.profile.name;
 
     if (!Array.isArray(authors)) {
       node.textContent = authors || "";
@@ -120,13 +121,20 @@
       }
 
       if (typeof author === "string") {
-        node.appendChild(document.createTextNode(author));
+        if (author === profileName) {
+          node.appendChild(el("strong", "self-author", author));
+        } else {
+          node.appendChild(document.createTextNode(author));
+        }
         return;
       }
 
       var link = document.createElement("a");
       link.href = author.href;
       link.textContent = author.text;
+      if (author.text === profileName) {
+        link.className = "self-author";
+      }
       if (/^https?:\/\//.test(author.href)) {
         link.target = "_blank";
         link.rel = "noopener";
