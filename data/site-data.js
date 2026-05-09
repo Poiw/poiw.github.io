@@ -121,7 +121,7 @@ window.siteData = {
           { label: "Paper", href: "data/assets/files/modp_main.pdf" },
           { label: "Supplemental", href: "data/assets/files/modp_main_supp.pdf" },
           { label: "Video", href: "https://drive.google.com/file/d/1Y5U7VrXydYTWNdMqinqzgG6aOWXnR4FL/view?usp=sharing" },
-          { label: "Code & Data", href: "https://github.com/facebookresearch/MODP" },
+          { label: "Code & Data", href: "https://github.com/facebookresearch/Online-3DGS-Monocular" },
           { label: "Cite", href: "data/assets/citations/modp.bib" }
         ]
       },
