@@ -226,7 +226,7 @@ window.siteData = {
     items: [
       {
         date: "Jun 2025 \u2013 Mar 2026",
-        title: "Research Scientist",
+        title: "Research Scientist Intern",
         place: "NVIDIA",
         details: "Santa Clara, USA"
       },
