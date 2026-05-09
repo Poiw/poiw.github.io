@@ -326,6 +326,64 @@
     return block;
   }
 
+  function randomBetween(min, max) {
+    return min + Math.random() * (max - min);
+  }
+
+  function randomItem(items) {
+    return items[Math.floor(Math.random() * items.length)];
+  }
+
+  function initMascotCiallo() {
+    var mascot = document.querySelector(".corner-mascot");
+    var fonts = [
+      '"Comic Sans MS", "Comic Sans", cursive',
+      '"Trebuchet MS", Arial, sans-serif',
+      '"Arial Rounded MT Bold", Arial, sans-serif',
+      'Georgia, "Times New Roman", serif',
+      '"Segoe Print", "Bradley Hand ITC", cursive',
+      'Verdana, Geneva, sans-serif'
+    ];
+    var colors = [
+      "#e84a8a",
+      "#2f8fdb",
+      "#42a85f",
+      "#f08a24",
+      "#8b1f58",
+      "#7b58d6",
+      "#d4493f"
+    ];
+
+    if (!mascot) {
+      return;
+    }
+
+    mascot.addEventListener("click", function () {
+      var pop = el("span", "ciallo-pop", "Ciallo \uff5e(\u2220\u30fb\u03c9< )\u2312\u2605!");
+      var compact = window.matchMedia("(max-width: 560px)").matches;
+      var size = compact ? randomBetween(13, 19) : randomBetween(17, 27);
+      var driftX = randomBetween(-44, 34);
+      var driftY = randomBetween(-88, -42);
+      var startRotation = randomBetween(-18, 18);
+      var endRotation = startRotation + randomBetween(-16, 16);
+
+      pop.style.setProperty("--left", randomBetween(34, 70) + "%");
+      pop.style.setProperty("--top", randomBetween(-10, 18) + "%");
+      pop.style.setProperty("--x", driftX + "px");
+      pop.style.setProperty("--y", driftY + "px");
+      pop.style.setProperty("--rotate-start", startRotation + "deg");
+      pop.style.setProperty("--rotate-end", endRotation + "deg");
+      pop.style.setProperty("--size", size + "px");
+      pop.style.setProperty("--font", randomItem(fonts));
+      pop.style.setProperty("--color", randomItem(colors));
+
+      mascot.appendChild(pop);
+      pop.addEventListener("animationend", function () {
+        pop.remove();
+      });
+    });
+  }
+
   function render() {
     var data = window.siteData;
     var main = document.getElementById("main-content");
@@ -339,4 +397,5 @@
   }
 
   render();
+  initMascotCiallo();
 })();
