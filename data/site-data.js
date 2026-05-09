@@ -38,16 +38,36 @@ window.siteData = {
     title: "Bio",
     paragraphs: [
       [
-        "My name is Songyin Wu (\u5434\u677e\u9690). I am a Ph.D. student at the University of California, Santa Barbara, advised by ",
+        "I am Songyin Wu (\u5434\u677e\u9690), a Ph.D. student in Computer Science at the University of California, Santa Barbara, advised by ",
         { text: "Prof. Ling-Qi Yan", href: "https://sites.cs.ucsb.edu/~lingqi/" },
-        ". My research mainly focuses on rendering. I'm especially interested in exploring novel representations for efficient real-time rendering."
+        ". My research focuses on rendering, especially efficient representations for real-time graphics."
       ],
       [
-        "Prior to my PhD studies, I earned my bachelor's degree at Peking University, where I was fortunate to be supervised by ",
+        "Before UCSB, I earned my B.S. in Computer Science from Peking University, where I worked with ",
         { text: "Prof. Baoquan Chen", href: "https://baoquanchen.info/" },
         "."
       ]
-    ]
+    ],
+    education: {
+      title: "Education",
+      items: [
+        {
+          degree: "Ph.D. in Computer Science",
+          institution: "University of California, Santa Barbara",
+          date: "2022 - 2026"
+        },
+        {
+          degree: "M.S. in Computer Science",
+          institution: "University of California, Santa Barbara",
+          date: "2022 - 2025"
+        },
+        {
+          degree: "B.S. in Computer Science (Turing Class)",
+          institution: "Peking University",
+          date: "2017 - 2021"
+        }
+      ]
+    }
   },
 
   publications: {

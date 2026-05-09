@@ -192,15 +192,42 @@
 
   function renderBio(data) {
     var block = el("section", "bio-section");
+    var content = el("div", "bio-content");
+    var copy = el("div", "bio-copy");
     var h2 = el("h2", null, data.title);
     h2.id = "bio-title";
     block.setAttribute("aria-labelledby", h2.id);
     block.appendChild(h2);
 
     data.paragraphs.forEach(function (paragraph) {
-      block.appendChild(renderTextParts("p", null, paragraph));
+      copy.appendChild(renderTextParts("p", null, paragraph));
     });
 
+    content.appendChild(copy);
+
+    if (data.education && data.education.items && data.education.items.length) {
+      var education = el("div", "education-panel");
+      var educationTitle = el("h3", null, data.education.title);
+      var list = el("div", "education-list");
+
+      data.education.items.forEach(function (item) {
+        var row = el("article", "education-item");
+        var date = el("p", "education-year", item.date);
+        var degree = el("p", "education-degree", item.degree);
+        var meta = el("p", "education-meta", item.institution);
+
+        row.appendChild(date);
+        row.appendChild(degree);
+        row.appendChild(meta);
+        list.appendChild(row);
+      });
+
+      education.appendChild(educationTitle);
+      education.appendChild(list);
+      content.appendChild(education);
+    }
+
+    block.appendChild(content);
     return block;
   }
 
