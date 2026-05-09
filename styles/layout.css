@@ -1,0 +1,59 @@
+.site-frame {
+  position: relative;
+  z-index: 0;
+  display: grid;
+  grid-template-columns: minmax(280px, 350px) minmax(0, 1fr);
+  min-height: 100vh;
+  border-block: 18px solid #1f292b;
+}
+
+.profile-panel {
+  position: sticky;
+  top: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  align-self: start;
+  min-height: calc(100vh - 36px);
+  padding: 52px 38px 30px;
+  border-right: 1px solid var(--line);
+  background: rgba(248, 250, 240, 0.78);
+  backdrop-filter: blur(18px);
+}
+
+.main-content {
+  width: min(100%, 1480px);
+  margin-inline: auto;
+  padding: 44px clamp(28px, 3.2vw, 60px) 54px;
+}
+
+.bio-section {
+  max-width: 760px;
+  padding-bottom: 32px;
+}
+
+.bio-section p {
+  margin: 0;
+  color: #314145;
+  font-size: 1.02rem;
+}
+
+.content-section {
+  padding: 26px 0 4px;
+  border-top: 1px solid var(--line);
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.section-heading h2 {
+  margin-bottom: 0;
+}
+
+.section-heading.compact {
+  justify-content: flex-start;
+}
