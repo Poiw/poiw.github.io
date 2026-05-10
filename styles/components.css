@@ -40,6 +40,7 @@
   font-size: clamp(2.3rem, 5vw, 3.05rem);
   font-weight: 600;
   line-height: 1.06;
+  white-space: nowrap;
 }
 
 .identity p {
@@ -52,8 +53,9 @@
   display: inline-block;
   margin-top: 4px;
   color: var(--accent);
-  font-size: 1rem;
+  font-size: 0.94rem;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .short-rule {
