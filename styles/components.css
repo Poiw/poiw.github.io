@@ -69,6 +69,23 @@
   gap: 14px;
 }
 
+.profile-art {
+  align-self: center;
+  width: min(100%, clamp(138px, 18vh, 196px));
+  margin-top: auto;
+  padding-top: 26px;
+  opacity: 0.9;
+  pointer-events: none;
+  transform: translateY(18px);
+}
+
+.profile-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 14px 24px rgba(31, 41, 43, 0.08));
+}
+
 .profile-link {
   display: grid;
   grid-template-columns: 24px 1fr;

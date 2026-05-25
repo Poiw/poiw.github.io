@@ -155,6 +155,7 @@
     var institution = el("a", null, data.institution);
     var rule = el("div", "short-rule");
     var links = el("nav", "profile-links");
+    var art = data.artSrc ? el("div", "profile-art") : null;
     var footer = el("footer", "profile-footer");
     var footerText = el("span", null, data.footer);
 
@@ -180,10 +181,22 @@
       links.appendChild(link);
     });
 
+    if (art) {
+      var artImage = document.createElement("img");
+      artImage.src = data.artSrc;
+      artImage.alt = "";
+      artImage.setAttribute("aria-hidden", "true");
+      artImage.decoding = "async";
+      art.appendChild(artImage);
+    }
+
     content.appendChild(portrait);
     content.appendChild(identity);
     content.appendChild(rule);
     content.appendChild(links);
+    if (art) {
+      content.appendChild(art);
+    }
     footer.appendChild(footerText);
 
     aside.appendChild(content);

@@ -8,6 +8,7 @@ window.siteData = {
     institutionUrl: "https://www.ucsb.edu/",
     portraitAlt: "Songyin Wu",
     portraitSrc: "data/assets/profile/songyin-wu.jpg",
+    artSrc: "data/assets/site/profile-art.png",
     links: [
       {
         label: "Email",
