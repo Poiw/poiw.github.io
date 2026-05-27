@@ -458,3 +458,35 @@
 .misc-text strong {
   color: #202a2d;
 }
+
+.professional-section {
+  padding-bottom: 28px;
+}
+
+.professional-list {
+  display: grid;
+  gap: 14px;
+  max-width: 980px;
+}
+
+.professional-item {
+  display: grid;
+  grid-template-columns: minmax(190px, 240px) minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.professional-item h3 {
+  margin: 0;
+  color: #202a2d;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.professional-item p {
+  margin: 0;
+  color: #536468;
+  font-size: 0.98rem;
+  line-height: 1.55;
+}

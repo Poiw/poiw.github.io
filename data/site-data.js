@@ -260,5 +260,28 @@ window.siteData = {
         text: "Anime, Video Games, and Tennis."
       }
     ]
+  },
+
+  professionalActivities: {
+    title: "Professional Activities",
+    groups: [
+      {
+        label: "International Papers Committee",
+        items: [
+          "High-Performance Graphics"
+        ]
+      },
+      {
+        label: "Reviewers",
+        items: [
+          "ACM SIGGRAPH",
+          "ACM SIGGRAPH ASIA",
+          "ACM Transactions on Graphics (TOG)",
+          "Eurographics",
+          "Pacific Graphics",
+          "IEEE Transactions on Visualization and Computer Graphics"
+        ]
+      }
+    ]
   }
 };

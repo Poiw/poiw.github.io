@@ -136,6 +136,11 @@
     gap: 2px;
   }
 
+  .professional-item {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
   .bio-section .education-year {
     grid-row: auto;
   }

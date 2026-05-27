@@ -339,6 +339,22 @@
     return block;
   }
 
+  function renderProfessionalActivities(data) {
+    var block = section(data.title, "content-section professional-section");
+    var list = el("div", "professional-list");
+
+    data.groups.forEach(function (group) {
+      var item = el("article", "professional-item");
+
+      item.appendChild(el("h3", null, group.label));
+      item.appendChild(el("p", null, group.items.join(", ")));
+      list.appendChild(item);
+    });
+
+    block.appendChild(list);
+    return block;
+  }
+
   function randomBetween(min, max) {
     return min + Math.random() * (max - min);
   }
@@ -407,6 +423,7 @@
     main.appendChild(renderFeatureSection(data.projects, "project"));
     main.appendChild(renderExperience(data.experience));
     main.appendChild(renderMisc(data.misc));
+    main.appendChild(renderProfessionalActivities(data.professionalActivities));
   }
 
   render();
