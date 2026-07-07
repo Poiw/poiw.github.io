@@ -3,9 +3,9 @@
 window.siteData = {
   profile: {
     name: "Songyin Wu",
-    role: "Ph.D. Student \u00b7 Computer Science",
-    institution: "University of California, Santa Barbara",
-    institutionUrl: "https://www.ucsb.edu/",
+    role: "Research Scientist",
+    institution: "NVIDIA",
+    institutionUrl: "https://research.nvidia.com/labs/adlr/",
     portraitAlt: "Songyin Wu",
     portraitSrc: "data/assets/profile/songyin-wu.jpg",
     artSrc: "data/assets/site/profile-art.png",
@@ -39,14 +39,16 @@ window.siteData = {
     title: "Bio",
     paragraphs: [
       [
-        "I am Songyin Wu (\u5434\u677e\u9690), a Ph.D. student in Computer Science at the University of California, Santa Barbara, advised by ",
-        { text: "Prof. Ling-Qi Yan", href: "https://sites.cs.ucsb.edu/~lingqi/" },
-        ". My research focuses on rendering, especially efficient representations for real-time graphics."
+        "I am Songyin Wu (\u5434\u677e\u9690), a Research Scientist at NVIDIA in ",
+        { text: "Applied Deep Learning Research (ADLR)", href: "https://research.nvidia.com/labs/adlr/" },
+        ". My work focuses on AI-assisted real-time graphics and rendering, especially methods that make interactive visual experiences more capable, efficient, and expressive."
       ],
       [
-        "Before UCSB, I earned my B.S. in Computer Science from Peking University, where I worked with ",
-        { text: "Prof. Baoquan Chen", href: "https://baoquanchen.info/" },
-        "."
+        "I received my Ph.D. in Computer Science from the University of California, Santa Barbara, advised by ",
+        { text: "Prof. Ling-Qi Yan", href: "https://sites.cs.ucsb.edu/~lingqi/", nowrap: true },
+        ". At Peking University, I worked with ",
+        { text: "Prof. Baoquan Chen", href: "https://baoquanchen.info/", nowrap: true },
+        " while earning my B.S. in Computer Science."
       ]
     ],
     education: {
@@ -225,6 +227,13 @@ window.siteData = {
   experience: {
     title: "Experience",
     items: [
+      {
+        date: "Jul 2026 \u2013 Present",
+        title: "Research Scientist",
+        place: "NVIDIA",
+        details: "California, USA",
+        current: true
+      },
       {
         date: "Jun 2025 \u2013 Mar 2026",
         title: "Research Scientist Intern",

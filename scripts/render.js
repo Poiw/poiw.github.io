@@ -92,6 +92,9 @@
       var link = document.createElement("a");
       link.href = part.href;
       link.textContent = part.text;
+      if (part.nowrap) {
+        link.className = "nowrap-link";
+      }
       if (/^https?:\/\//.test(part.href)) {
         link.target = "_blank";
         link.rel = "noopener";
