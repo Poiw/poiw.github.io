@@ -48,7 +48,7 @@
   font-size: 1.04rem;
 }
 
-.identity a {
+.identity .institution {
   display: inline-block;
   margin-top: 4px;
   color: var(--accent);

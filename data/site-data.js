@@ -5,7 +5,7 @@ window.siteData = {
     name: "Songyin Wu",
     role: "Research Scientist",
     institution: "NVIDIA",
-    institutionUrl: "https://research.nvidia.com/labs/adlr/",
+    institutionUrl: "",
     portraitAlt: "Songyin Wu",
     portraitSrc: "data/assets/profile/songyin-wu.jpg",
     artSrc: "data/assets/site/profile-art.png",

@@ -155,7 +155,7 @@
     var identity = el("div", "identity");
     var name = el("h1", null, data.name);
     var role = el("p", null, data.role);
-    var institution = el("a", null, data.institution);
+    var institution = data.institutionUrl ? el("a", "institution", data.institution) : el("span", "institution", data.institution);
     var rule = el("div", "short-rule");
     var links = el("nav", "profile-links");
     var art = data.artSrc ? el("div", "profile-art") : null;
@@ -169,7 +169,9 @@
       portraitImage.alt = data.portraitAlt || data.name;
       portrait.appendChild(portraitImage);
     }
-    institution.href = data.institutionUrl;
+    if (data.institutionUrl) {
+      institution.href = data.institutionUrl;
+    }
     links.setAttribute("aria-label", "Profile links");
 
     identity.appendChild(name);
