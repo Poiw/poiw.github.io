@@ -155,7 +155,7 @@ window.siteData = {
           { text: "Songyin Wu", href: "index.html" },
           { text: "Ling-Qi Yan", href: "https://sites.cs.ucsb.edu/~lingqi/" }
         ],
-        venue: "ACM Transactions on Graphics (2026)",
+        venue: "ACM Transactions on Graphics 2026",
         thumbnailSrc: "data/assets/publications/unifiedgaussian.png",
         thumbnailAlt: "Unified Gaussian Primitives for Scene Representation and Rendering",
         buttons: [
