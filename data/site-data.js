@@ -155,12 +155,12 @@ window.siteData = {
           { text: "Songyin Wu", href: "index.html" },
           { text: "Ling-Qi Yan", href: "https://sites.cs.ucsb.edu/~lingqi/" }
         ],
-        venue: "Preprint",
+        venue: "ACM Transactions on Graphics (2026)",
         thumbnailSrc: "data/assets/publications/unifiedgaussian.png",
         thumbnailAlt: "Unified Gaussian Primitives for Scene Representation and Rendering",
         buttons: [
           { label: "Website", href: "https://mangosister.github.io/gsr_site/", icon: "website" },
-          { label: "Paper", href: "https://arxiv.org/abs/2406.09733" },
+          { label: "Paper", href: "https://dl.acm.org/doi/10.1145/3829352" },
           { label: "Cite", href: "data/assets/citations/unifiedgaussian.bib" }
         ]
       },
