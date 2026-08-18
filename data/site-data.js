@@ -122,6 +122,7 @@ window.siteData = {
         buttons: [
           { label: "Website", href: "MODP/index.html", icon: "website" },
           { label: "Paper", href: "data/assets/files/modp_main.pdf" },
+          { label: "Paper (Low-res)", href: "data/assets/files/modp_main_lowres.pdf" },
           { label: "Supplemental", href: "data/assets/files/modp_main_supp.pdf" },
           { label: "Video", href: "https://drive.google.com/file/d/1Y5U7VrXydYTWNdMqinqzgG6aOWXnR4FL/view?usp=sharing" },
           { label: "Code & Data", href: "https://github.com/facebookresearch/Online-3DGS-Monocular" },
