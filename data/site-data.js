@@ -219,7 +219,8 @@ window.siteData = {
         thumbnailSrc: "https://www.nvidia.com/content/dam/en-zz/nvidiaweb/geforce/news/dlss5-breakthrough-in-visual-fidelity-for-games/how-nvidia-dlss-5-works.jpg",
         thumbnailAlt: "NVIDIA DLSS 5 neural rendering overview",
         buttons: [
-          { label: "Website", href: "https://www.nvidia.com/en-us/geforce/news/dlss5-breakthrough-in-visual-fidelity-for-games/", icon: "website" }
+          { label: "Website", href: "https://www.nvidia.com/en-us/geforce/news/dlss5-breakthrough-in-visual-fidelity-for-games/", icon: "website" },
+          { label: "Technical Report", href: "https://research.nvidia.com/labs/adlr/DLSS5/" }
         ]
       }
     ]

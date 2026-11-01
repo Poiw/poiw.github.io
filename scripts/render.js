@@ -424,8 +424,8 @@
 
     renderProfile(data.profile);
     main.appendChild(renderBio(data.bio));
-    main.appendChild(renderFeatureSection(data.publications, "publication"));
     main.appendChild(renderFeatureSection(data.projects, "project"));
+    main.appendChild(renderFeatureSection(data.publications, "publication"));
     main.appendChild(renderExperience(data.experience));
     main.appendChild(renderMisc(data.misc));
     main.appendChild(renderProfessionalActivities(data.professionalActivities));
